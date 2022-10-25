@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{	width: 100%;
+	max-width: 1360px;
+	background: #e3e2e1;
+}
+/*estilos do menu*/
+.menu{
+	clear: both;
+	list-style-type: none;
+	background-color: green; 
+	width: 100%;
+	margin: 0;
+	padding: 0 5%;
+	border: 2px solid white;
+	cursor: pointer;
+}
+.menu ul{
+	background-color: red;
+	position: relative;
+	list-style: none;
+}
+.menu a:hover{
+	color: white;
+	background-color: rgb(16, 87, 50);
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+}
+.menu li:hover {
+  background-color: rgb(16, 87, 50);
+}
+.menu ul li{
+	color: black;
+	font-size: 17px;
+	padding:  15px 16px;
+	margin: 0 1.83016105417277%;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+	float: left;
+}
+.sobre{
+	display: inline-block;
+	float: right;
+	clear: right;
+}
+.sobre2{
+	display: inline-block;
+	float: right;
+	clear: right;
+}
+.clear{
+	clear: both;
+}
+
+/*fim do estilo do menu*/
+
+/*eslilo do header.php*/
+.banner{
+	max-width: 1366px;
+	width: 100%;
+	height: auto;
+	padding-left: 21.96193265007321%;
+	background-color: #EE7410;
+	box-sizing: border-box;
+	
+}
+.centro img{
+	position: absolute;
+	margin-left: -14.64128843338214%;
+
+}
+.centro h4{
+	position: absolute;
+	text-align: center;
+	margin-left: -14.64128843338214%;
+	padding-top: 173px;
+	padding-left: 55px;
+	font-size: 20px;
+	font-style: italic;
+	color: white;
+
+}
+.centro h1{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 50px;
+	font-style: italic;
+	position: relative;
+	padding: 80px;
+	color: white;
+}
+/*fim do estilo de header.php*/
+
+/*eslilo do footer.php*/
+.footer{
+	clear: both;
+	border-top: 2px solid green;
+	padding: 30px 0;
+	box-sizing: border-box;
+	float: both;
+	text-align: center;
+}
+.footer p{
+	margin-top: 8px;
+}
+.footer img{
+	width: 231px;
+	height: 63px;
+}
+
+/*fim do estilo de footer.php*/
+.msg{
+	text-align: center;
+	font-size: 17px;
+}
+.container{
+	background: white;
+	margin: 10px auto;
+	margin-top: 10px;
+	border: 5px solid green;
+	width: 500px;
+	height: 600px;
+}
+.container img{
+	width: 90%;
+	margin: 5%;
+}
+.container p{
+	color: red;
+	font-size: 13px;
+	margin-left: 5%;
+}
+.form label{
+	margin-top: 20px;
+	font-size: 30px;
+	display: block;
+	text-align: center;
+}
+.form input[type=password]{
+	width: 90%;
+	height: 40px;
+	margin: 20px 5%;
+	padding-left: 10px;
+	display: block;
+	font-size: 15px;
+}
+.form input[type=text]{
+	width: 90%;
+	height: 40px;
+	margin: 20px 5%;
+	padding-left: 10px;
+	display: block;
+	font-size: 15px;
+}
+.form input[type=date]{
+	width: 90%;
+	height: 40px;
+	margin: 20px 5%;
+	display: block;
+	font-size: 15px;
+}
+.form input[type=submit]{
+	width: 90%;
+	height: 40px;
+	margin: 20px 5%;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.container2 img{
+	width: 90%;
+	margin: 5%;
+}
+.container2{
+	background: white;
+	margin: 50px auto;
+	padding: 2%;
+	width: 400px;
+	height: 500px;
+	border: 5px solid green;
+}
+
+.container3{
+	background: white;
+	margin: 10px auto;
+	margin-top: 10px;
+	border: 5px solid green;
+	width: 500px;
+	height: 600px;
+}
+.container3 img{
+	width: 90%;
+	margin: 5%;
+}
+.container3 p{
+	color: red;
+	font-size: 13px;
+	margin-left: 5%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 85%;
+  margin: 20px 115px;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: white
+}
+.faixa{
+	width: 100%;
+	height: auto;
+	background-color: #1cbd2e;
+	color: white;
+}
+.faixa img{
+	width: 30px;
+	margin-right: 10px;
+}
+.faixa h2{
+	font-size: 40px;
+	padding: 20px 105px;
+	display: inline-block;
+}
+.faixa h4{
+	font-size: 40px;
+	padding: 20px 80px;
+	display: inline-block;
+	float: right;
+	clear: right;
+}
+.box{
+	width: 86%;
+	height: auto;
+	margin: 20px 8%;
+}
+.caixa{
+	width: 24%;
+	height: 300px;
+	margin-left: 7px;
+	background-color: white;
+	border: 2px solid black;
+	display: inline-block;
+	border-radius: 50px;
+}
+.caixa p{
+	margin: 30px 50px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 26px;
+}
+.caixa span{
+	margin: 30px 80px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+.info{
+	width: 87%;
+	height: 30px;
+	margin: 20px 105px;
+	background-color: #7a1305;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+.info p{
+	display: inline-block;
+	color: white;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: ;
+	padding: 3px;
+	margin-left: 10px;
+}
+.info img{
+	display: inline-block;
+	width: 30px;
+	cursor: pointer;
+	float: right;
+	clear: right;
+}
