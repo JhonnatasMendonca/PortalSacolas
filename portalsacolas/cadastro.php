@@ -21,15 +21,13 @@
 
 </head>
 <body>
-	<div class="faixa">
-		<h2>Bem-vindo!!</h2>
-		<h4><?php echo($nome) ?></h4>
-	</div><!--faixa-->
+	
 	<?php if ($adm == 2): ?>
 	<div class="menu">
 				<ul>
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="cadastro.php">Cadastrar Operadores</a></li>
+					<li><a href="cadastrados.php">Operadores Cadastrados</a></li>
 					<li><a href="lancamento.php">Lançamentos</a></li>
 					<div><li><a href="login.php">Admnistrativa</a></li></div>
 					<div class="sobre"><li><a href="login2.php">Logout</a></li></div>
@@ -38,25 +36,21 @@
 	</div><!--menu-->
 	<?php endif; ?>
 
-
-
-
 	<?php if ($adm == 3): ?>
 	<div class="menu">
 				<ul>
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="cadastro.php">Cadastrar Operadores</a></li>
+					<li><a href="cadastrados.php">Operadores Cadastrados</a></li>
 					<li><a href="lancamento.php">Lançamentos</a></li>
 					<div class="sobre"><li><a href="login2.php">Logout</a></li></div>
 				</ul>
 				<div class="clear"></div>
 	</div><!--menu-->
 	<?php endif; ?>
-	
-	 <div class="container">
-	 	<img src="images/logo.png">
-	 	<div class="msg">
-	 	<?php
+
+	<div style="margin-left: 35%;" class="box-lancamento">
+		<?php
 	
 			if(isset($_SESSION['msg'])){
 				echo $_SESSION['msg'];
@@ -64,42 +58,22 @@
 			} 
 			
 		 ?>
-	 	</div>
-	 	
-	 	<form class="form" method="post" action="processa.php">
+		<form class="form-lancamento" method="post" action="processa.php">
+			<div class="msg"></div>
+			<h2 >Cadastrar Operador:</h2>
 			<label>Operador:</label>
-			<input type="text" name="operador" placeholder="Digite o número do operador..." required>
+			<input type="number" name="operador" placeholder="Digite o número do operador..." required>
 			<p>*O operador do colaborador são os 4 últimos números de sua matrícula.</p>
 			<label>Nome:</label>
 			<input type="text" name="nome" placeholder="Digite o nome do operador..." required>
 			<p>*Digite todo nome em "maiúsculo".</p>
-			<input type="submit" name="acao" value="Cadastrar">
+			<input type="submit" name="cadastrarOperador" value="Cadastrar">
 		</form>
-	 </div><!--container-->
-
+	</div>
 	
-	<!--
-	<ul>
-		<?php
-		/*
-		 $listagem = $conn->prepare("SELECT * FROM cadastro_op");
-		 $listagem->execute();
-		 while($lista = $listagem->fetch(PDO::FETCH_ASSOC)):
-		?>
-		<li><?php echo "ID Cadastrado: ". $lista["id"];?></li>
-		<li><?php echo "Operador: ". $lista["operador"];?></li>
-		<li><?php echo "Nome: ". $lista["nome"];?></li>
-		<li><?php echo "Data e Hora do Cadastro: ". $lista["created"];?></li>
-		<hr>
-		<?php
-		endwhile; */
-		 ?>
-		
-	</ul>-->
-	
-
+	 
 <?php
-include  'footer.php'; 
+	include  'footer.php'; 
  ?>
 </body>
 </html>

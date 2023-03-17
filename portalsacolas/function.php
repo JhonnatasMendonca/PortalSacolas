@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/sao_paulo');
 include_once("conexao.php");
 
 function retorna($Operador, $conn3){

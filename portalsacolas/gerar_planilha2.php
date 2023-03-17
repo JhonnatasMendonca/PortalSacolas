@@ -1,5 +1,6 @@
  <?php
 	include('conexao.php');
+	date_default_timezone_set('America/sao_paulo');
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

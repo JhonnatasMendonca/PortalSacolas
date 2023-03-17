@@ -13,10 +13,7 @@
 					<img style="width: 231px" src="images/logo.png">
 
 				</div><!--fim-->
-					<p style="font-size: 13px;">Desenvolvido por Jhonnatas Mendonça</p>
-					<p>Todos os Direitos Reservados ao CPD Paulista</p>
-					<p>AV. Prefeito José Eustáquio de Queiroz, 53401-435 - Paulista - PE - Brasil</p>
-			
+					<p>Desenvolvido por Jhonnatas Mendonça | Todos os Direitos Reservados ao CPD Paulista | AV. Prefeito José Eustáquio de Queiroz, 53401-435 - Paulista - PE - Brasil</p>
 	</div><!--footer-->
 </body>
 </html>
